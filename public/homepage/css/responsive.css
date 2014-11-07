@@ -1,0 +1,111 @@
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .navbar-brand{
+        display: none;
+    }
+    .subHeader.page div{ margin-top: 50px}
+}
+
+@media screen and (min-width: 690px) and (max-width: 990px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+   .navbar-toggle { display:inline-block; float:right; }
+   .navbar-header { width:100%; }
+
+}
+
+/******************** TABLET *********************/
+
+@media only screen and (max-width:990px) { 
+
+	.dropdown:hover .dropdown-menu {  }
+
+	.serviceArrow { display:none; }
+
+	.rowText { padding-right:17px; }
+
+	.sidebarWidget.submission { height:auto; }
+
+	.masonryRow .col-lg-3 { width:374px; } 
+	.masonryRow .col-lg-3.wide { width:374px; } 
+
+	#map-canvas { height:830px; }
+	.filterNav li a { font-size:13px; padding:24px 15px 23px 15px; }
+        
+
+}
+
+@media only screen and (max-width:1200px) { 
+
+	.subHeader.home .sliderPrice { margin-top:7px; float:left; }
+
+	.price { font-size:19px; }
+
+	.subHeader.page { margin-top:60px; }
+
+	.nav.navbar-nav { float:left; }
+
+	.nav.navbar-nav.userButtons { margin-bottom:20px; }
+
+	.verticalDivider { display:none; }
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width:990px) { 
+
+	.priceSliderLabel {
+		margin-bottom:0px;
+	}
+        
+}
+
+/******************** MOBILE *********************/
+
+@media only screen and (max-width: 767px) {
+
+	
+	.filterNav li a { font-size:15px; padding:24px 30px 23px 30px;}
+	.filterNav .current:after { display:block; }
+        .pricelabel{ display: none}
+
+}
+
+@media only screen and (max-width: 730px) {
+
+	.filterHeadButton { display:none; }
+
+	.propertySort_list { display:none; }
+
+	.propertyCat_list { width:100%; }
+
+	.nav.navbar-nav.userButtons { margin-left:10px; margin-top:-10px; }
+}
+
+@media only screen and (max-width: 589px) {
+
+	.subHeader.page h1 { font-size:29px; margin-right:20px; margin-top:10px; line-height:50px; }
+	.searchForm input { float:left; }
+	.subHeader.page { padding:30px 0px 30px 0px; }
+
+	/** SUBHEADER HOME **/
+	.subHeader.home h1 { font-size:40px; line-height:61px; }
+	.icon-button-arrow, .icon-button-user { display:none; }
+	.buttonText { margin-left:15px; }
+	.or { display:none; }
+	.subHeader.home .sliderPrice { font-size:37px; }
+	.sliderTextBox .buttonGrey.large { margin-right:10px; margin-bottom:10px; }
+
+	/** FILTER **/
+	.filterNav li a { padding:23px 20px 23px 20px;}
+      
+
+	.masonryRow .col-lg-3 { max-width:100%; } 
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	/** FILTER **/
+	.filterNav li a { padding:23px 10px 23px 10px; font-size:13px; }
+
+}

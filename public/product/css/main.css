@@ -1,0 +1,29 @@
+#headerBox, #headerImage, #leftCol, #footerBox, #pageBackLink, #homeTopBox, #homeMainNavi, #homeRightCol, #headerRegionSelector {
+	display: none;
+}
+html {
+	background-color: #FFF;
+	background-image: none;
+}
+#allOver {
+	width: 708px;
+	padding: 0;
+}
+#printLogo {
+	display: block !important;
+	text-align: right;
+	margin: 0 0px 45px 0;
+}
+#printLogo img {
+	width: 280px;
+	height: auto;
+}
+#mainColComplete {
+	margin: 0px 0px 0px 7px;
+}
+#mainColWide {
+	margin: 0px 0px 0px 7px;
+}
+#mainColNarrow {
+	margin: 0px 0px 0px 7px;
+}

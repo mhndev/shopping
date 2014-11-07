@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Sans Light'), local('MerriweatherSans-Light'), 
+  url(http://localhost/fonts/6LmGj5dOJopQKEkt88GowY_zIojJi0m4a5Z6tRh6itY.woff.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'),
+  url(http://localhost/fonts/AKu1CjQ4qnV8MUltkAX3sL2aU247V0zTzydO4RoO9Ok.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Sans Bold'), local('MerriweatherSans-Bold'), 
+  url(http://localhost/fonts/6LmGj5dOJopQKEkt88GowQfd.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Merriweather Sans ExtraBold'), local('MerriweatherSans-ExtraBold'),
+  url(http://localhost/fonts/6LmGj5dOJopQKEkt88GowWT7sFQ1Iz1BbpcuCPlgc9Q.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Sans Light Italic'), local('MerriweatherSans-LightItalic'),
+  url(http://localhost/fonts/nAqt4hiqwq3tzCecpgPmVX9UU5BmOJGkLxUCVv5VXdc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Merriweather Sans Italic'), local('MerriweatherSans-Italic'),
+  url(http://localhost/fonts/3Mz4hOHzs2npRMG3B1ascf0KIgDhPIHb_R.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Sans Bold Italic'), local('MerriweatherSans-BoldItalic'),
+  url(http://localhost/fonts/nAqt4hiqwq3tzCecpgPmVYM8pfYvjMoOxygpzLVILAs.woff) format('woff'); 
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Merriweather Sans ExtraBold Italic'), local('MerriweatherSans-ExtraBldItalic'),
+  url(http://localhost/fonts/nAqt4hiqwq3tzCecpgPmVW2xy75WLVt7UI7Cycabsy8.woff) format('woff');
+}

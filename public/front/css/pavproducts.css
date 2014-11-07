@@ -1,0 +1,30 @@
+.pav-categoryproducts ul,
+.pav-categoryproducts ol{
+	list-style: none;
+}
+.pav-categoryproducts ul li img{
+    display: none;
+}
+
+.pav-categoryproducts ul li a{
+    display: block;
+    cursor: default;
+}
+
+.pav-categoryproducts ul li a span{
+    cursor: text;
+}
+.pav-categoryproducts .product-grid .row{
+    padding: 0;
+}
+.pav-categoryproducts .tab-pane{
+	position: relative;
+}
+.pav-categoryproducts .carousel-controls{
+	position: absolute;	
+	top: -29px;
+	right: 0;
+}
+.pav-categoryproducts .carousel-controls .left{
+	left: -38px;
+}

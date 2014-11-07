@@ -1,0 +1,6 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /shopping/
+
+RewriteCond %{REQUEST_URI} !/public [NC]
+RewriteRule ^(.*)$ public/$1 [L]

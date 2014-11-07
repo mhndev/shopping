@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'yekan';
+    src: url('fonts/BYekan.eot');
+    src: url('fonts/BYekan.eot@#iefix') format('embedded-opentype'),
+         url('fonts/BYekan.woff') format('woff'),
+         url('fonts/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  font-size:12px;
+}

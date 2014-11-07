@@ -1,0 +1,126 @@
+#right-table{
+	float: right;
+	margin-right: 15px;
+	width: 243px;
+	border-right: 1px solid #CCC;
+	border-width: 0px 1px 1px;
+	border-style: none solid solid;
+	border-color: -moz-use-text-color #CCC #CCC;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+}
+
+
+#right-table .table-header{
+	height:30px;
+	width:100%;
+	background-color:#666;
+	overflow: hidden;
+}
+.table-header h2 {
+	color:#fff;
+	float: right;
+	margin: 5px;
+}
+.price{
+	height: 110px;
+}
+.price h2{
+	display: block;
+	float: right;
+	margin-right: 15px;
+	margin-top: 7px;
+	padding: 7px;
+}
+
+.sprite1 { 
+	background: url('ui-widget-bg.png') no-repeat -2px -2px;
+	width: 21px; 
+	height: 21px; 
+}
+
+.border{
+	height: 1px;
+	background-color: #CCC;
+	margin: 15px;
+	width: 84%;
+	display: -moz-grid-line;
+}
+
+.list{
+	
+}
+.list h2{
+	text-align: -moz-right !important;
+	width:93%;
+}
+
+.checkbox{
+	float:right !important;
+	width: 15px !important;
+	margin-left: 10px !important;
+	margin-right: 15px !important;
+}
+.checkbox-p{
+	text-align: -moz-right !important;
+}
+
+#left-table{
+	margin:auto;
+	width: 975px;
+}
+#left-table .item{
+	width:218px !important;
+	height:300px !important;
+	border-width:2px 1px 1px;
+	border-style: solid;
+	border-color: #E9E9E9;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	float: right !important;
+	position: relative !important;
+	margin: 10px 10px 0px 0px !important;
+}
+#left-table .item:hover{
+	border-color: #ccc;
+	-moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+}
+#left-table .item .top{
+	width:100% !important;
+	height:160px !important;
+	text-align: center !important;
+}
+
+#left-table .item .top .image{
+	width:150px !important;
+	height:150px !important;
+	margin-top:5px;
+}
+#left-table .item .bottom{
+	width:100% !important;
+	height:110px !important;
+	margin:17px;
+}
+.bottom .addtocard{
+	width:100% !important;
+	height:110px !important;
+	margin-left: -33px;
+}
+.bottom h3{
+	float: right;
+	margin-top: 45px;
+	font-size: 16px;
+	color: blue;
+}
+.bottom img{
+	float: left;
+	margin-top: 45px;
+	margin-left: 30px;
+}

@@ -1,0 +1,9 @@
+.formDropdown , input {
+width: 100%;
+padding: 5px;
+margin-bottom: 20px;
+border-radius: 3px;
+border: none;
+border: 1px solid #c9c9c9;
+box-shadow: 0 1px 1px white;
+}

@@ -1,0 +1,1 @@
+/home/majid/sites/shopping/app/views/sells/show.blade.php

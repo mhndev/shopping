@@ -1,0 +1,696 @@
+/*====================================================================================*/
+/*RESET
+/*====================================================================================*/
+
+* { margin:0px; padding:0px; }
+
+h1,h2,h3,h4 { margin-top:0px; }
+
+
+
+.fright{float:right;}
+.lowidth{width:20px; margin-right:25px;}
+ul li { list-style:none; }
+
+/*====================================================================================*/
+/*GLOBAL SETTINGS
+/*====================================================================================*/
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('type/proximanova-light-webfont.eot');
+    src: url('type/proximanova-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('type/proximanova-light-webfont.woff') format('woff'),
+        url('type/proximanova-light-webfont.ttf') format('truetype'),
+        url('type/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Reg';
+    src: url('type/proximanova-regular-webfont.eot');
+    src: url('type/proximanova-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('type/proximanova-regular-webfont.woff') format('woff'),
+        url('type/proximanova-regular-webfont.ttf') format('truetype'),
+        url('type/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semi-bold';
+    src: url('type/proximanova-semibold-webfont.eot');
+    src: url('type/proximanova-semibold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+        url('type/proximanova-semibold-webfont.woff') format('woff'),
+        url('type/proximanova-semibold-webfont.ttf') format('truetype'),
+        url('type/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BCompset';
+    src: url('type/BCompset.eot');
+    src: url('type/BCompset.woff') format('woff'), 
+        url('type/BCompset.ttf') format('truetype'), 
+        url('type/BCompset.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { width:100%; height:100%; }
+
+body {
+    font-family:BCompset, Proxima Nova Light, Helvetica, Arial;
+    font-size:15px;
+    color:#464646;
+    width:100%; 
+    height:100%; 
+    direction: rtl;
+}
+
+h1 { font-family: BCompset, Proxima Nova Light, Helvetica, Arial; }
+
+h3 {
+    font-family:BCompset, Proxima Nova Light, Helvetica, Arial;
+    color:#4a4786;
+    font-size:19px;
+    padding-bottom:7px;
+    border-bottom:7px solid #4a4786;
+    display:inline-block;
+}
+
+h4 {
+    font-family:BCompset, Proxima Nova Semi-bold, Helvetica, Arial;
+    font-size:16px;
+}
+
+a { 
+    color:#81be32;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+a:hover { color:#9dd356; text-decoration:none; }
+
+.divider {
+    background-color:#d7d7d7;
+    max-width:100%;
+    height:2px;
+    margin-top:-14px;
+    margin-bottom:30px;
+}
+
+.divider.thin {
+    height:1px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.genericSection { padding:70px 0px 70px 0px; }
+
+/* BUTTONS */
+.buttonColor {
+    font-family:BCompset, Open Sans;
+    font-size:13px;
+    letter-spacing:0.2px;
+    padding:10px 35px 10px 35px !important;
+    color:white;
+    border-radius:5px;
+    border:1px solid #69992c;
+    box-shadow: inset 0 1px 1px white;
+    text-shadow:0px -1px 3px #0e4562;
+    background-color:#81be32;
+    background: -webkit-linear-gradient(#81be32, #76ae2e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#81be32, #76ae2e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#81be32, #76ae2e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#81be32, #76ae2e); /* Standard syntax */
+}
+
+.buttonColor:hover {
+    color:white;
+    text-decoration:none;
+    background: -webkit-linear-gradient(#81be32, #8fc34c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#81be32, #8fc34c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#81be32, #8fc34c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#81be32, #8fc34c); /* Standard syntax */
+}
+
+.buttonGrey {
+    font-family:BCompset, Open Sans;
+    font-size:11.4px;
+    letter-spacing:0.2px;
+    padding:6px 27px 6px 27px !important;
+    color:#868686;
+    border-radius:5px;
+    border:1px solid #cfcfcf;
+    background-color:#f6f6f6;
+    background: -webkit-linear-gradient(#f8f8f8, #f2f2f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f8f8f8, #f2f2f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f8f8f8, #f2f2f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #f2f2f2); /* Standard syntax */
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+.buttonGrey:hover {
+    text-decoration:none;
+    color:#393939;
+    background: linear-gradient(#f2f2f2, #ffffff); /* Standard syntax */
+}
+
+.buttonGrey.large {
+    font-size:14px;
+    padding:10px 30px 10px 12px !important;
+    color:#868686;
+}
+
+.buttonGrey.large:hover { 
+    color:#393939;
+    background: linear-gradient(#f2f2f2, #ffffff); /* Standard syntax */
+}
+
+/** FORM ELEMENTS **/
+
+.formDropdown, input {
+    width:100%;
+    padding:5px;
+    margin-bottom:20px;
+    border-radius:3px;
+    border:none;
+    border:1px solid #c9c9c9;
+    box-shadow: 0 1px 1px white;
+}
+
+input[type="file"] {
+    background:white;
+    border:none;
+    padding:5px 0px 5px 0px;
+}
+
+select {
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none; 
+    text-indent: 0.01px;
+    text-overflow: "";
+    background: url('../images/dropdown-button.png') no-repeat;
+    background-position: left -1px;
+    background-color:white;
+    cursor:pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+label {
+    font-family:BCompset, Open Sans;
+    color:#787878;
+    font-size:13px;
+}
+
+textarea { height:130px; }
+
+.icon {
+    float:left;
+    margin-right:10px;
+    padding-top:0px;
+}
+
+/*====================================================================================*/
+/*HEADER 
+/*====================================================================================*/
+
+/* MAIN HEADER */
+/***********************/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar.navbar-default.navbar-fixed-top { 
+    background-color:white;
+    border:none; 
+    box-shadow: 0px 0px 3px #9c9c9c;
+    z-index:1000;
+}
+
+.navbar-toggle { margin-top:17px; }
+
+.navbar-brand { margin-top:6px; font-size:21px; }
+.navbar-brand span { font-family:BCompset, Open Sans; color:#81be32; }
+.navbar-brand img { margin-right:15px; padding-bottom:3px; }
+
+.nav.navbar-nav { float:right; margin-right: 20px}
+.navbar-collapse li{ float: right;}
+.nav.navbar-nav li a {
+    font-family:BCompset, Proxima Nova Reg;
+    color:#686868;
+    font-size:12.5px;
+    letter-spacing:0.4px;
+    padding-top:26px;
+    padding-bottom:26px;
+    margin-right:5px;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+.nav.navbar-nav li a:hover {
+    background-color:transparent;
+    color:#81be32;
+}
+
+.nav.navbar-nav .current { box-shadow: inset 0 -4px 0px #81be32; }
+.nav.navbar-nav .current-sub { background-color:#f4f4f4; color:#868686; }
+
+
+/* LOGIN/REGISTER */
+/**************************/
+.userButtons { margin-right:-15px; }
+
+.userButtons .buttonGrey {
+    font-family:BCompset, Open Sans !important;
+    font-size:11.4px !important;
+    color:#868686 !important;
+    margin-top:21px;
+    margin-left:5px;
+    padding-top:4px !important;
+    padding-bottom:5px !important;
+}
+
+.userButtons .buttonGrey:hover { color:#393939 !important; }
+
+.verticalDivider {
+    height:71px;
+    width:1px;
+    background-color:#d5d5d5;
+    margin-right:18px;
+}
+
+
+/*====================================================================================*/
+/*SUB-HEADERS 
+/*====================================================================================*/
+
+.subHeader.page {
+    margin-top:73px;
+    padding:65px 0px 65px 0px;
+    background-color:#4a4763;
+    background-image: url('../images/subHeader-page-bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.subHeader.page h1 {
+    float:left;
+    font-family:BCompset, Proxima Nova Light;
+    background:rgba(225, 225, 225, 0.7);
+    padding:0px 10px 0px 10px;
+    line-height:67px;
+    display:inline;
+}
+
+.searchForm input {
+    margin-top:18px;
+    padding-right:30px;
+    width:200px;
+    float:right;
+    border:none;
+    box-shadow:none;
+    background:rgba(225, 225, 225, 0.8);
+    background-image: url('../images/icon-search.png');
+    background-repeat:no-repeat;
+    background-position: right 10px center;
+}
+
+
+/*====================================================================================*/
+/*  FILTER
+/*====================================================================================*/
+
+.filter { margin-top:-68px; position:relative; z-index:1; }
+
+.filterHeader {
+    background-color:#545098;
+    height:68px;
+}
+
+.filterNav { float:right; padding:21px; padding-right:0px;}
+
+.filterNav li { display:inline;}
+
+.filterNav li a {
+    font-family:BCompset, Proxima Nova Semi-bold;
+    color:white;
+    padding:19px 28px 24px 35px;
+    text-decoration:none;
+    outline:none;
+}
+
+.filterNav .current {
+    position:relative;
+    background-color:#4a4786;
+}
+
+.filterNav .current:after {
+    content:"";
+    position:absolute;
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
+    right:50%; /* controls horizontal position */
+    margin-right:-15px;
+    border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style:solid;
+    border-color:#4a4786 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+    z-index:1;
+}
+
+.filterHeadButton {
+    float:left;
+    background-color:#4a4786;
+    padding:23px;
+}
+
+.filterContent {
+    direction: rtl;
+    padding:23px;
+    border-radius:5px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border:1px solid #c9c9c9;
+    border-top:none;
+    box-shadow: inset 0 -1px 1px white;
+    background-color:#f2f2f2;
+    background: -webkit-linear-gradient(#f8f8f8, #f2f2f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f8f8f8, #f2f2f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f8f8f8, #f2f2f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f8f8f8, #ebebeb); /* Standard syntax */
+}
+
+.filterContent .col-lg-3 , .filterContent .col-lg-4 {
+    float: right;
+}
+
+.formBlock {
+    direction: rtl;
+    float:left;
+    margin-right:40px;
+    width:100%;
+}
+
+.priceSlider,.priceSlider2,.priceSliderH,.priceSliderS,.priceSliderA { margin-top:-12px; margin-bottom:5px; height:8px !important; }
+
+.hayat, .anbar, .soole{ display: none;}
+
+.priceInput {
+    float:left; 
+    height:20px;
+    background:#e7e7e7; 
+    border-radius:5px; 
+    padding:0px 3px 0px 3px; 
+    font-size:14px; 
+    font-weight: bold;
+}
+
+.priceInput input {
+    border:none;
+    box-shadow:none;
+    width:60px;
+    padding:0;
+}
+
+.noUi-connect { background-color:#81be32 !important; }
+.noUi-handle { 
+    border-radius:80px !important; 
+    cursor:pointer !important; 
+    width:20px !important; 
+    height:20px !important;
+}
+.noUi-handle:after,.noUi-handle:before { display:none !important; }
+
+.priceSliderLabel {
+    font-size:12px;
+    color:#b9b9b9;
+    margin-bottom:19px;
+}
+
+
+/*====================================================================================*/
+/* PROPERTIES
+/*====================================================================================*/
+
+/** PROPERTIES GLOBAL & HEADER **/
+.properties {
+    padding:70px 0px 70px 0px;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    box-shadow: inset 0 1px 1px white;
+}
+
+/** PROPERTIES GRID **/
+.propertyItem {
+    background-color:white;
+    box-shadow: 0px 1px 3px #d4d4d4;
+    margin-bottom:30px;
+}
+
+.propertyContent { padding:9px; }
+.propertyContent a { color:#2a2a2a; }
+.propertyContent a:hover { color:#4a4786; }
+
+.propertyImg {
+    max-width:100%;
+    margin-bottom:15px;
+}
+
+.propertyImgLink {
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: copacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+.propertyImgLink:hover { opacity:0.8; }
+
+.propertyType {
+    position:absolute;
+    font-family:BCompset, Proxima Nova Semi-bold;
+    font-size:11px;
+    background-color:#4a4786;
+    color:white !important;
+    padding:7px;
+    z-index:1;
+}
+
+
+.forSale {
+    float:left;
+    font-family:BCompset, Proxima Nova Semi-bold;
+    font-size:15px;
+    background-color:#d5d5d5;
+    color:white;
+    padding:4px 9px 4px 9px;
+    border-radius:4px;
+    display:inline-block;
+}
+
+.price {
+    font-family:BCompset, Proxima Nova Semi-bold;
+    float:right;
+    color:#4a4786;
+    font-size:23px;
+}
+
+.propertyDetails { 
+    background-color:#f8f8f8;
+    margin-top:0px; 
+    border:1px solid #cacaca;
+    width:100%;
+    text-align:center;
+}
+
+.propertyDetails td {
+    font-family:BCompset, Proxima Nova Semi-bold;
+    font-size:12px;
+    width:25%;
+    height:45px;
+    border-color:#cacaca;
+    color:#ababab;
+}
+
+
+/*====================================================================================*/
+/* SERVICES
+/*====================================================================================*/
+
+.services { padding:70px 0px 70px 0px; text-align:center; }
+
+.services h1 {
+    text-align:center;
+    font-family:BCompset, Proxima Nova Light;
+    font-size:40px;
+    margin:0px;
+}
+
+.services h1 span { font-family:BCompset, Proxima Nova Semi-bold; }
+
+
+/*====================================================================================*/
+/* LUX
+/*====================================================================================*/
+
+.Lux {
+    padding:70px 0px 70px 0px;
+    color:white;
+    text-align:center;
+    background-image: url('../images/Lux-bg.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.Lux .col-lg-3.col-md-3.col-sm-3 { margin-bottom:60px; }
+
+
+
+
+/*====================================================================================*/
+/*  CALL TO ACTION
+/*====================================================================================*/
+
+.callToAction { padding:0px 0px 70px 0px;}
+
+.ctaBox { 
+    background-color:#ebebeb;
+    padding:30px 25px 30px 15px;
+    border-radius:5px;
+}
+
+.ctaBox .col-lg-9, .ctaBox .col-lg-3 {
+    float: right;
+}
+
+.callToAction h1 { font-family:BCompset; font-size:32px; }
+.callToAction h1 span { font-family:BCompset; }
+
+.callToAction p { font-size:17px; }
+
+
+/*====================================================================================*/
+/* 16 FOOTER
+/*====================================================================================*/
+
+footer {
+    padding:70px 0px 50px 0px;
+    background-color:#4e4c6c;
+    color:#a8a6b7;
+}
+
+footer .col-lg-3.col-md-3 { margin-bottom:30px; float: right }
+
+.footerLogo { font-family:Proxima Nova Light; color:white; font-size:21px; }
+.footerLogo span { font-family:Proxima Nova Semi-bold; color:#81be32; font-size:21px; }
+.footerLogo img { margin-right:15px; }
+
+footer h4 { color:white; margin-bottom:20px; }
+
+footer span {
+    font-family:Proxima Nova Semi-bold;
+    font-size:11px;
+}
+
+.contactList li {
+    margin-bottom:17px;
+}
+
+
+footer .buttonColor { 
+    margin-top:-1px; 
+    width:80px; 
+    border-color:#4f4d6e;
+    padding:10px 15px 10px 15px !important;
+}
+
+.bottomBar {
+    font-family:Open Sans;
+    padding-top:15px;
+    padding-bottom:7px;
+    font-size:11px;
+    color:#726f91;
+    background-color:#373550;
+}
+
+.bottomBar p { float:left; margin-top:6px; }
+
+.bottomBar .socialIcons { margin-top:5px; }
+
+.bottomBar .socialIcons li { border-color:#5b597c; }
+
+.socialIcons { float:right; margin-bottom:0; }
+
+.socialIcons li {
+    display:inline;
+    padding-left:10px;
+    padding-right:6px;
+    border-left:1px solid #e2e2e2;
+}
+
+.socialIcons li a {
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.socialIcons li a:hover { opacity:0.6; }
+
+
+
+/*====================================================================================*/
+/* containary
+/*====================================================================================*/
+
+.containary {
+    background-color:white;
+    box-shadow: 0px 1px 3px #d4d4d4;
+    margin-bottom:30px;
+}
+
+.containary .rowText { padding:30px; }
+
+.containary h4 { font-family:BCompset, Proxima Nova Light; font-size:19px;}
+.containary h5 { 
+    font-family:BCompset, Proxima Nova Semi-bold; 
+    font-size:16px; 
+    margin-top:25px;
+}
+
+.containary span {
+    font-family:BCompset, Proxima Nova Semi-bold;
+    font-size:12px;
+    color:#939393;
+    line-height:33px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.containary span a { color:#4a4786; }
+
+
+
+
+
+
