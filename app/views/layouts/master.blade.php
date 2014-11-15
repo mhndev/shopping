@@ -104,19 +104,16 @@
             </li>
 
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit"></i>
-            {{ Lang::get('persian.orders-management', array(), 'fa');   }}
-                <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{URL::to('/admin/orders/create')}}"><i class="fa fa-plus"></i>
-                  {{ Lang::get('persian.add-order', array(), 'fa');   }}
-                </a></li>
-                <li><a href="{{URL::to('admin/orders/')}}"><i class="fa fa-list"></i>
-                  {{ Lang::get('persian.order-list', array(), 'fa');   }}
-                </a></li>
-              </ul>
-            </li>
+
+
+
+
+            <li><a href="{{URL::to('/admin/orders')}}"><i class="fa fa-list"></i> {{ Lang::get('persian.orders-management', array(), 'fa');   }}
+            </a></li>
+
+
+
+
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
