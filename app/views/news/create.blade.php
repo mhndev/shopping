@@ -17,7 +17,7 @@
 
 <ol class="breadcrumb">
 
-  <li><a href="{{URL::to('admin/dashbord')}}"><i class="fa fa-dashboard"></i> 
+  <li><a href="{{URL::to('admin/dashbord')}}"><i class="fa fa-dashboard"></i>
 	{{ Lang::get('persian.admin-firstpage', array(), 'fa') }}
   </a></li>
 
@@ -83,7 +83,7 @@
 
 			{{ Form::text('image_path1' ,'', array(
 				'id'=>'fileurl1' , 'class'=>'form-control'
-			    ))  
+			    ))
 			}}
 		</div>
 	</div>
@@ -104,7 +104,7 @@
 
 			{{ Form::text('image_path2' ,'', array(
 				'id'=>'fileurl2' , 'class'=>'form-control'
-			    ))  
+			    ))
 			}}
 		</div>
 	</div>
@@ -129,9 +129,9 @@
 <div class="row">
 	<div class="col-md-4" style="float:right">
 	{{
-		Form::submit(Lang::get('persian.submit', array(), 'fa'), 
+		Form::submit(Lang::get('persian.submit', array(), 'fa'),
 		array(
-			'class'=> 'btn btn-primary' , 
+			'class'=> 'btn btn-primary' ,
 			'style'=>'width:100%;margin-bottom:40px; '
 			))
 	}}
@@ -155,8 +155,9 @@
 
 <script>
 CKEDITOR.replace( 'news', {
-    filebrowserBrowseUrl : '/shopping/public/elfinder/elfinder.html', 
+    filebrowserBrowseUrl : '/shopping/public/elfinder/elfinder.html',
     uiColor : '#9AB8F3',
+    language : 'fa'
 });
 </script>
 
