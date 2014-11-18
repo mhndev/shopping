@@ -52,7 +52,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          
+
 
 
           <a class="navbar-brand" href="index.html">
@@ -80,7 +80,7 @@
                 </a></li>
                 <li><a href="{{URL::to('admin/news/')}}">
                     <i class="fa fa-list"></i>
-                  
+
                   {{ Lang::get('persian.news-list', array(), 'fa');   }}
                 </a></li>
               </ul>
@@ -142,7 +142,7 @@
                   {{ Lang::get('persian.menus-list', array(), 'fa');   }}
                 </a></li>
               </ul>
-            </li>     
+            </li>
 
 
 
@@ -160,21 +160,21 @@
 
                 <li><a href="{{URL::to('admin/slider/setting')}}"><i class="fa fa-wrench"></i>
                   {{ Lang::get('persian.slider-setting', array(), 'fa');   }}
-                </a></li>                
+                </a></li>
               </ul>
-            </li>   
+            </li>
 
 
-             <li><a href="{{URL::to('admin/contactusmngt')}}"><i class="fa fa-envelope"></i> 
+             <li><a href="{{URL::to('admin/contactusmngt')}}"><i class="fa fa-envelope"></i>
             {{ Lang::get('persian.contactus-management', array(), 'fa');   }}
-             </a></li>            
+             </a></li>
 
 
 
-             <li><a href="{{URL::to('admin/footer')}}"><i class="fa fa-dashboard"></i> 
+             <li><a href="{{URL::to('admin/footer')}}"><i class="fa fa-dashboard"></i>
             {{ Lang::get('persian.footertext-management', array(), 'fa');   }}
-             </a></li>              
-            
+             </a></li>
+
 
 
             <li class="dropdown">
@@ -189,7 +189,7 @@
                   {{ Lang::get('persian.siteDisable', array(), 'fa');   }}
                 </a></li>
               </ul>
-            </li>                          
+            </li>
 
 
           </ul>
@@ -200,15 +200,15 @@
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              
+
             </li>
-           
-            <li style="width:120px;" class="dropdown user-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  
-              {{ Lang::get('persian.khaneye-kala', array(), 'fa');   }}
+
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+              {{ Lang::get('persian.parspanasonic', array(), 'fa');   }}
                 <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                
+
                 <li class="divider"></li>
                 <li><a href="{{URL::to('auth/logout')}}"><i class="fa fa-power-off"></i> خارج شدن</a></li>
               </ul>
@@ -222,7 +222,7 @@
     </div><!-- /#wrapper -->
 
 
- 
+
 
   </body>
 </html>
